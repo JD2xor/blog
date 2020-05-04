@@ -1,4 +1,27 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://jd2xor.com/"
+languageCode = "ja"
+title = "JD2xor's Blog"
+# theme
 theme = "hugo-now"
+# Comment the themesDir option if you use this theme in production
+# themesDir = "../.."
+# google analytics
+# GoogleAnalytics = "UA-XXXXXX"
+
+[taxonomies]
+  archive = "archives"
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "Game, etc."
+  author = "JD2xor"
+  # keywords = ["hugo-now", "hugo"]
+  # avatar = "/images/hugo.png"
+  displayauthor = false
+  # pygments
+  PygmentsUseClasses = true
+  PygmentsCodeFences = true
+  # pagination
+  paginate = 10
+  paginatePath = "page"
