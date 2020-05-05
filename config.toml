@@ -7,6 +7,7 @@ theme = "hugo-now"
 # themesDir = "../.."
 # google analytics
 GoogleAnalytics = "UA-165601039-1"
+disqusShortname = "jd2xor-blog"
 
 [taxonomies]
   archive = "archives"
