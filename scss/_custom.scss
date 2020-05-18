@@ -9,18 +9,22 @@ table {
   }
 }
 
-.embed-steam {
-  position: relative;
-  width: 100%;
-  padding-bottom: calc(5 / 17 * 100%);
-}
+.embed-steam-wrapper {
+  max-width: 646px;
 
-.embed-steam iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  .embed-steam {
+    position: relative;
+    width: 100%;
+    padding-bottom: calc(5 / 17 * 100%);
+  
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .disqus {
