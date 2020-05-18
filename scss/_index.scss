@@ -16,16 +16,17 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1140px;
   padding: 0 10px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
+  font-weight: 700;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: 1em 0;
   padding: 0;
 
   @include mobile {
@@ -42,10 +43,15 @@ h1 {
 
 h2 {
   font-size: 24px;
+  a {
+    color: inherit;
+  }
+  border-bottom: solid 2px $blue;
 }
 
 h3 {
   font-size: 20px;
+  border-bottom: solid 2px $gray;
 }
 
 h4 {
@@ -54,7 +60,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
 a {
@@ -140,12 +146,12 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $lightGray;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 1rem 0;
 
   @include mobile {
     text-align: center;
@@ -184,9 +190,11 @@ img {
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
+  border-bottom: none;
   letter-spacing: 1px;
+  a {
+    color: inherit;
+  }
 }
 
 .site-description {
@@ -201,9 +209,8 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 4px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
 
   @include mobile {
     float: none;
@@ -216,7 +223,6 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
@@ -262,6 +268,14 @@ nav {
   .metadata {
     margin-bottom: 10px;
   }
+}
+
+.title {
+  border: none;
+}
+
+.fa-calendar {
+  padding-right: 5px;
 }
 
 .content {
@@ -315,6 +329,13 @@ img.card-img-top {
 
 .card-block {
   padding-top: 0rem;
+}
+
+div.table-of-contents {
+  margin-bottom: 2.5rem;
+  h4 {
+    font-weight: 400;
+  }
 }
 
 /* JS enabled */
@@ -381,20 +402,34 @@ img.card-img-top {
     color: #d9534f
 }
 
+table {
+  margin-bottom: 2.5rem;
+  tbody {
+    border-top: 0.1rem solid $darkGray;
+    border-bottom: 0.1rem solid $darkGray;
+  }
+  th, td {
+    padding: 0.5rem 3rem;
+  }
+}
+
+.disqus {
+  margin-top: 3rem;
+}
+
 .pagination {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 3rem;
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  margin-top: 3rem;
 }
 
 footer {
-  padding: 20px 0;
+  padding: 20px 0 2.5rem;
   text-align: center;
+  color: $gray;
+  font-size: 0.8em;
 }
