@@ -7,14 +7,13 @@
 {{ if and $has_headers $show_toc }}
 <div class="table-of-contents toc bd-callout">
     <!-- TOC header -->
-    <h4 class="text-muted">Table of Contents</h4>
+    <h4 class="text-muted">目次</h4>
     {{ range $headers }}
         {{ $header := . }}
-        {{ range first 1 (findRE "<h[1-6]" $header 1) }}
-            {{ range findRE "[1-6]" . 1 }}
+        {{ range first 1 (findRE "[1-6]" $header 1) }}
                 {{ $next_heading := (int .) }}
                 <!-- generate li array of the proper depth -->
-                {{ range seq $next_heading }}
+                {{ range seq 2 $next_heading }}
                     <ul class="toc-h{{ . }}">
                 {{end}}
                 {{ $base := ($.Page.File.Path) }}
@@ -29,7 +28,6 @@
                 {{ range seq $next_heading }}
                     </ul>
                 {{end}}
-            {{end}}
         {{end}}
     {{ end }}
 </div>
