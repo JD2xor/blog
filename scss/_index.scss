@@ -402,21 +402,6 @@ div.table-of-contents {
     color: #d9534f
 }
 
-table {
-  margin-bottom: 2.5rem;
-  tbody {
-    border-top: 0.1rem solid $darkGray;
-    border-bottom: 0.1rem solid $darkGray;
-  }
-  th, td {
-    padding: 0.5rem 3rem;
-  }
-}
-
-.disqus {
-  margin-top: 3rem;
-}
-
 .pagination {
   display: flex;
   justify-content: space-between;

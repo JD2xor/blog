@@ -1,3 +1,14 @@
+table {
+  margin-bottom: 2.5rem;
+  tbody {
+    border-top: 0.1rem solid $darkGray;
+    border-bottom: 0.1rem solid $darkGray;
+  }
+  th, td {
+    padding: 0.5rem 3rem;
+  }
+}
+
 .embed-steam {
   position: relative;
   width: 100%;
@@ -10,4 +21,8 @@
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.disqus {
+  margin-top: 3rem;
 }
