@@ -1,11 +1,23 @@
 table {
   margin-bottom: 2.5rem;
+  
   tbody {
     border-top: 0.1rem solid $darkGray;
     border-bottom: 0.1rem solid $darkGray;
+
+    tr {
+      @include mobile {
+        border-top: thin solid $lightGray;
+      }
+    }
   }
+
   th, td {
     padding: 0.5rem 3rem;
+
+    @include mobile {
+      padding: 0.5rem 1rem;
+    }
   }
 }
 
@@ -16,6 +28,10 @@ table {
     position: relative;
     width: 100%;
     padding-bottom: calc(5 / 17 * 100%);
+
+    @include mobile {
+      padding-bottom: 190px;
+    }
   
     iframe {
       position: absolute;
