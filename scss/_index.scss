@@ -59,7 +59,12 @@ p {
 a {
   color: $blue;
   text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
+  
+  &:link {
+    text-decoration: none;
+  }
+
   &:hover, &:active {
     color: $blue;
   }
