@@ -39,15 +39,16 @@ table {
   .link-widget-content {
     display: inline-block;
     vertical-align: middle;
-    width: calc(100% - 281px);
+    width: calc(100% - 280px);
     height: 147px;
     padding: 1rem 1.5rem;
+    border-right: 1px solid $lightGray;
     font-size: 12px;
     word-break: break-word;
     // overflow-wrap: break-word;
   
     @include mobile {
-      width: calc(100% - 148px);
+      width: calc(100% - 147px);
     }
 
     .link-widget-title {
@@ -78,16 +79,28 @@ table {
   .link-widget-thumbnail {
     display: inline-block;
     vertical-align: middle;
-    width: 281px;
+    width: 280px;
     height: 147px;
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-    border-left: 1px solid $lightGray;
     border-radius: 0 2px 2px 0;
   
     @include mobile {
-      width: 148px;
+      width: 147px;
+    }
+  }
+
+  .link-widget-no-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 280px;
+    font-size: 3.5rem;
+    color: #d0d0d0;
+    text-align: center;
+
+    @include mobile {
+      width: 147px;
     }
   }
 }
