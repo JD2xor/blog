@@ -21,6 +21,77 @@ table {
   }
 }
 
+.link-widget {
+  max-width: 660px;
+  height: 149px;
+  border: 1px solid $lightGray;
+  border-radius: 3px;
+  font-size: 0;   // To reduce gap between inline-blocks
+
+  &:hover {
+    border: 1px solid $gray;
+  }
+
+  a {
+    display: block;
+  }
+
+  .link-widget-content {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 281px);
+    height: 147px;
+    padding: 1rem 1.5rem;
+    font-size: 12px;
+    word-break: break-word;
+    // overflow-wrap: break-word;
+  
+    @include mobile {
+      width: calc(100% - 148px);
+    }
+
+    .link-widget-title {
+      display: block;
+      max-height: 45px;
+      margin: 0.25em 0 0.5em 0;
+      font-size: 16px;
+      color: $darkGray;
+      overflow: hidden;
+    }
+    
+    .link-widget-description {
+      display: block;
+      max-height: 34px;
+      margin-bottom: 0.5em;
+      color: $gray;
+      overflow: hidden;
+    }
+    
+    .link-widget-host {
+      display: block;
+      max-height: 17px;
+      color: $darkGray;
+      overflow: hidden;
+    }
+  }
+
+  .link-widget-thumbnail {
+    display: inline-block;
+    vertical-align: middle;
+    width: 281px;
+    height: 147px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-left: 1px solid $lightGray;
+    border-radius: 0 2px 2px 0;
+  
+    @include mobile {
+      width: 148px;
+    }
+  }
+}
+
 .embed-steam-wrapper {
   max-width: 646px;
 
