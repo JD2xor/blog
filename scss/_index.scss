@@ -281,8 +281,12 @@ nav {
   padding-right: 5px;
 }
 
+.tags {
+  margin-top: 0.5rem;
+}
+
 .content {
-  margin-top: 10px;
+  margin-top: 1.5rem;
 }
 
 pre .code, pre code, .code, code {
@@ -326,13 +330,6 @@ img.card-img-top {
   padding-top: 0rem;
 }
 
-div.table-of-contents {
-  margin-bottom: 2.5rem;
-  h4 {
-    font-weight: 400;
-  }
-}
-
 /* JS enabled */
 .js-enabled {
   display: none;
@@ -341,8 +338,7 @@ div.table-of-contents {
 /* Bootstrap Callouts */
 .bd-callout {
     padding: 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    margin: 2rem 0;
     border: 1px solid #eee;
     border-left-width: .25rem;
     border-radius: .25rem
@@ -350,7 +346,8 @@ div.table-of-contents {
 
 .bd-callout h4 {
     margin-top: 0;
-    margin-bottom: .25rem
+    margin-bottom: .25rem;
+    font-weight: 400;
 }
 
 .bd-callout p:last-child {
