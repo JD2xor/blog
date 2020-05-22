@@ -3,16 +3,23 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta name="description" content="{{ .Params.Description }}">
-<meta property="og:description" content="{{ .Params.Description }}" />
-<meta name="author" content="{{ .Site.Author }}" />
+{{ if .IsPage }}
+<meta name="description" content="{{ .Summary }}">
+<meta property="og:description" content="{{ .Summary }}" />
+{{ else }}
+<meta name="description" content="{{ .Site.Params.Description }}">
+<meta property="og:description" content="{{ .Site.Params.Description }}" />
+{{ end }}
 
+<meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}" />
-<meta property="twitter:title" content="{{ .Title }}" />
+
+{{ if .Params.banner }}
+<meta property="og:image" content="{{ .Permalink }}banner.png" />
+{{ else }}
+<meta property="og:image" content="{{ .Site.BaseURL }}/images/ogp.png" />
+{{ end }}
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@JD2xor" />
 <meta name="twitter:creator" content="@JD2xor" />
-
-<meta property="og:url" content="{{ .Permalink }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}/images/ogp.png" />
