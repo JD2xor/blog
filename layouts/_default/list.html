@@ -11,7 +11,7 @@
           <!-- supports emoji -->
           {{ .Summary | emojify }}
         </div>
-        <a href="{{ .Site.BaseURL }}{{ .URL }}" class="btn btn-outline-primary" role="button">Read More</a>
+        <a href="{{ .Permalink }}" class="btn btn-outline-primary" role="button">Read More</a>
       </article>
       {{ end }}
   </section>
