@@ -1,0 +1,20 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<div class="container">
+  <section class="section">
+      {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+      {{ range sort $paginator.Pages }}
+      <article class="article">
+        {{ partial "post-metadata-list" . }}
+        <div class="content">
+          {{ partial "banner" . }}
+          <!-- supports emoji -->
+          {{ .Summary | emojify }}
+        </div>
+        <a href="{{ .Site.BaseURL }}{{ .URL }}" class="btn btn-outline-primary" role="button">Read More</a>
+      </article>
+      {{ end }}
+  </section>
+</div>
+{{ partial "paginate-list" . }}
+{{ partial "footer" . }}
