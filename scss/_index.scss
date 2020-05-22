@@ -316,18 +316,10 @@ img.card-img-top {
 }
 
 .post-banner {
-  display: flex;
-  justify-content: space-between;
-
-  img {
-    height: 150px;
-    width: 100%;
-  }
-
-  @include mobile {
-    display: flex;   
-    flex-wrap: wrap;
-  }
+  height: 210px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
 }
 
 .card-block {

@@ -5,12 +5,7 @@ archives: "{{ dateFormat "2006" .Date }}"
 categories: "post"
 tags: ["blog", "post"]
 # draft: true
-banner: [
-    {
-        src: "/post/insert_image_here.svg",
-        alt: "insert image here"
-    }
-]
+banner: "banner.png"
 toc: true
 ---
 

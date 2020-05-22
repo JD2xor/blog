@@ -5,12 +5,7 @@ archives: "2020"
 categories: "game"
 tags: ["RingFit Adventure", "Nintendo", "Switch"]
 # draft: true
-# banner: [
-#     {
-#         src: "./insert_image_here.svg",
-#         alt: "insert image here"
-#     }
-# ]
+banner: "banner.png"
 toc: true
 ---
 
