@@ -127,6 +127,75 @@ table {
   }
 }
 
+.share-button-wrapper {
+  width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include mobile {
+    width: 160px;
+  }
+
+  .share-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 24px;
+    text-align: center;
+
+    @include mobile {
+      width: 25%;
+      font-size: 20px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .twitter {
+    border-color: $twitter;
+
+    i {
+      color: $twitter;
+    }
+  }
+
+  .pocket {
+    border-color: $pocket;
+
+    i {
+      color: $pocket;
+    }
+  }
+
+  .hatena {
+    border-color: $hatena;
+
+    i {
+      color: $hatena;
+    }
+
+    .hatena-icon:before {
+      content: "B!";
+      font-family: Verdana;
+      font-weight: bold;
+      font-style: normal;
+    }
+  }
+}
+
 .disqus {
   margin-top: 3rem;
 }
