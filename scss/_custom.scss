@@ -24,6 +24,7 @@ table {
 .link-widget {
   max-width: 660px;
   height: 149px;
+  margin: 2rem 0;
   border: 1px solid $lightGray;
   border-radius: 3px;
   font-size: 0;   // To reduce gap between inline-blocks
@@ -107,6 +108,7 @@ table {
 
 .embed-steam-wrapper {
   max-width: 646px;
+  margin-top: 2rem;
 
   .embed-steam {
     position: relative;
