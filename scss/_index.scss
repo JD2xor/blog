@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: 700;
 
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 1em 0;
   padding: 0;
 
@@ -54,6 +54,7 @@ h4 {
 
 p {
   margin: 1.5rem 0;
+  line-height: 1.6;
 }
 
 a {
@@ -71,8 +72,8 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 0.5rem 0;
+  padding-left: 2rem;
 }
 
 ul {
