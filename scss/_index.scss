@@ -100,9 +100,12 @@ strong, b {
   font-weight: bold;
 }
 
-img {
-  width: 100%;
+figure {
   max-width: 900px;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* Fixes images in popup boxes from Google Translate */
