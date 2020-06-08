@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<div class="container">
+  <section class="section">
+    <h2><i class="fa fa-tags" aria-hidden="true"></i> Tags</h2>
+
+    <div>
+      <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a> ({{ len $taxonomy }})</li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+</div>
+{{ partial "footer" . }}
