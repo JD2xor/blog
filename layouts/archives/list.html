@@ -1,0 +1,18 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<div class="container">
+  <section class="section">
+    {{ range .Pages }}
+      <article class="article">
+        {{ partial "post-metadata-list" . }}
+        <div class="content">
+          {{ partial "banner" . }}
+          <!-- supports emoji -->
+          {{ .Summary | emojify }}
+        </div>
+        <a href="{{ .Permalink }}" class="btn btn-outline-primary" role="button">Read More</a>
+      </article>
+      {{ end }}
+  </section>
+</div>
+{{ partial "footer" . }}

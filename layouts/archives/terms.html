@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+{{ partial "nav" . }}
+<div class="container">
+  <section class="section">
+    <h2><i class="fa fa-archive" aria-hidden="true"></i> Archives</h2>
+
+    <div>
+      <ul>
+        {{ range $name, $taxonomy := .Site.Taxonomies.archives }}
+          <li><a href="{{ "/archives/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a> ({{ len $taxonomy }})</li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+</div>
+{{ partial "footer" . }}
