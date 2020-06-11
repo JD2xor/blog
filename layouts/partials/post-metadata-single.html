@@ -6,6 +6,12 @@
     {{ end }}
     <p class="text-muted">{{ .Params.subtitle }}</p>
     <div class="text-muted"><i class="fa fa-calendar" aria-hidden="true"></i> {{ .Date.Format "January 2, 2006" }}</div>
+    {{ if .Params.categories }}
+    <div class="text-muted">
+      <i class="fa fa-folder" aria-hidden="true"></i>
+      <a class="button is-link code" href="{{ "/categories/" | relURL }}{{ .Params.categories | urlize }}">{{ .Params.categories | emojify }}</a>
+    </div>
+  {{ end }}
     {{ if .Params.tags }}
         {{ partial "tags" .Params.tags }}
     {{ end }}
