@@ -1,6 +1,8 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
 <div class="container">
+  <h2><i class="fa fa-archive" aria-hidden="true"></i>{{ strings.FirstUpper .Data.Singular }}: "{{ .Title }}"</h2>
+
   <section class="section">
     {{ range .Pages }}
       <article class="article">
