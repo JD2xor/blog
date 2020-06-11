@@ -6,8 +6,8 @@
 
     <div>
       <ul>
-        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-          <li><a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a> ({{ len $taxonomy }})</li>
+        {{ range .Data.Terms }}
+          <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
         {{ end }}
       </ul>
     </div>
