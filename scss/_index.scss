@@ -291,11 +291,15 @@ nav {
 }
 
 .fa-calendar {
-  padding-right: 5px;
+  margin-right: 5px;
 }
 
 .fa-folder {
-  padding-right: 3px;
+  margin-right: 3px;
+}
+
+h2 > i.fa {
+  margin-right: 0.5rem;
 }
 
 .content {
