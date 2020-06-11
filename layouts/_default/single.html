@@ -1,10 +1,13 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
+
 <div class="container">
   <section class="section">
     <div class="container">
       <article>
-        {{ partial "post-metadata-single" . }}
+        <h1 class="title">{{ .Title | emojify }}{{ if .Draft }}::Draft{{ end }}</h1>
+        {{ partial "post-metadata" . }}
+        
         <div class="content">
           {{ partial "banner" . }}
           {{ partial "table-of-contents" . }}
@@ -14,12 +17,13 @@
       </article>
     </div>
   </section>
+
   {{ partial "share-button" . }}
-</div>
-<div class="container">
+
   <div class="disqus">
     {{ template "_internal/disqus.html" . }}
   </div>
 </div>
+
 {{ partial "paginate-single" . }}
 {{ partial "footer" . }}

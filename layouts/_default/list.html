@@ -1,20 +1,25 @@
 {{ partial "header" . }}
 {{ partial "nav" . }}
+
 <div class="container">
   <section class="section">
-      {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-      {{ range sort $paginator.Pages }}
+    {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+    {{ range sort $paginator.Pages }}
       <article class="article">
-        {{ partial "post-metadata-list" . }}
+        <h2 class="title"><a href="{{ .Permalink }}">{{ .Title | emojify }}</a>{{ if .Draft }}::Draft{{ end }}</h2>
+        {{ partial "post-metadata" . }}
+
         <div class="content">
           {{ partial "banner" . }}
           <!-- supports emoji -->
           {{ .Summary | emojify }}
         </div>
+
         <a href="{{ .Permalink }}" class="btn btn-outline-primary" role="button">Read More</a>
       </article>
-      {{ end }}
+    {{ end }}
   </section>
 </div>
+
 {{ partial "paginate-list" . }}
 {{ partial "footer" . }}
