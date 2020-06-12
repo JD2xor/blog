@@ -288,14 +288,18 @@ nav {
 
 .text-muted {
   margin-top: 5px;
-}
 
-.fa-calendar {
-  margin-right: 5px;
-}
+  i.fa-calendar {
+    margin-right: 0.6rem;
+  }
 
-.fa-folder {
-  margin-right: 3px;
+  i.fa-folder {
+    margin-right: 9px;
+  }
+
+  i.fa-tags {
+    margin-right: 0.4rem;
+  }
 }
 
 h2 > i.fa {
