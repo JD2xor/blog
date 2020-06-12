@@ -3,19 +3,17 @@
 
 <div class="container">
   <section class="section">
-    <div class="container">
-      <article>
-        <h1 class="title">{{ .Title | emojify }}{{ if .Draft }}::Draft{{ end }}</h1>
-        {{ partial "post-metadata" . }}
-        
-        <div class="content">
-          {{ partial "banner" . }}
-          {{ partial "table-of-contents" . }}
-          <!-- supports emoji -->
-          {{ .Content | emojify }}
-        </div>
-      </article>
-    </div>
+    <article>
+      <h1 class="title">{{ .Title | emojify }}{{ if .Draft }}::Draft{{ end }}</h1>
+      {{ partial "post-metadata" . }}
+      
+      <div class="content">
+        {{ partial "banner" . }}
+        {{ partial "table-of-contents" . }}
+        <!-- supports emoji -->
+        {{ .Content | emojify }}
+      </div>
+    </article>
   </section>
 
   {{ partial "share-button" . }}
