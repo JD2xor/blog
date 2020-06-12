@@ -1,8 +1,17 @@
+{{ $icon := .Data.Singular }}
+{{ if eq $icon "category" }}
+  {{ $icon = "folder" }}
+{{ else if eq $icon "tag" }}
+  {{ $icon = "tag" }}
+{{ else }}
+  {{ $icon = "archive" }}
+{{ end }}
+
 {{ partial "header" . }}
 {{ partial "nav" . }}
 
 <div class="container">
-  <h2><i class="fa fa-archive" aria-hidden="true"></i>{{ strings.FirstUpper .Data.Singular }}: "{{ .Title }}"</h2>
+  <h2><i class="fa fa-{{ $icon }}" aria-hidden="true"></i>{{ strings.FirstUpper .Data.Singular }}: "{{ .Title }}"</h2>
 
   <section class="section">
     {{ range .Pages }}

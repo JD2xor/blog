@@ -1,8 +1,18 @@
+{{ $icon := .Title }}
+{{ if eq $icon "Categories" }}
+  {{ $icon = "folder" }}
+{{ else if eq $icon "Tags" }}
+  {{ $icon = "tag" }}
+{{ else }}
+  {{ $icon = "archive" }}
+{{ end }}
+
 {{ partial "header" . }}
 {{ partial "nav" . }}
+
 <div class="container">
   <section class="section">
-    <h2><i class="fa fa-archive" aria-hidden="true"></i>Archives</h2>
+    <h2><i class="fa fa-{{ $icon }}" aria-hidden="true"></i>{{ .Title }}</h2>
 
     <div>
       <ul>
@@ -13,4 +23,5 @@
     </div>
   </section>
 </div>
+
 {{ partial "footer" . }}
