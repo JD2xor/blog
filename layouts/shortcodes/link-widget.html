@@ -1,4 +1,4 @@
-{{ $url := .Get "url" }}
+{{ $url := .Get 0 }}
 {{ $json := getJSON "https://secret-sea-89806.herokuapp.com/ogp?url=" $url }}
 {{ $title := $json.Title }}
 {{ $description := $json.Description }}
