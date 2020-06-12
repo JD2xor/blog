@@ -2,7 +2,7 @@
 title: "リングフィットアドベンチャーのメインストーリーを123日でクリアした"
 date: 2020-05-05T16:20:00+09:00
 archives: "2020"
-categories: "game"
+categories: "Game"
 tags: ["RingFit Adventure", "Nintendo", "Switch"]
 # draft: true
 banner: "banner.png"
@@ -68,7 +68,7 @@ toc: true
 
 フィットスキルの一覧はこちらから見ることができます。
 
-{{< link-widget url="https://www.nintendo.co.jp/ring/adv/fitskill.html" >}}
+{{< link-widget "https://www.nintendo.co.jp/ring/adv/fitskill.html" >}}
 
 （※ 押しこみ系はフィットスキルではありませんが、アドベンチャーモードをプレイする上で必要な操作であり、回数が記録されるため記載しています。）
 

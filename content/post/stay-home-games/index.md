@@ -2,8 +2,8 @@
 title: "おうち時間でプレイしたゲーム"
 date: 2020-06-06T17:03:51+09:00
 archives: "2020"
-categories: "game"
-tags: ["game"]
+categories: "Game"
+tags: ["Indie game"]
 # draft: true
 # banner: "banner.png"
 toc: true
@@ -15,7 +15,7 @@ toc: true
 
 ## Hollow Knight
 
-{{< link-widget url="https://hollowknight.com/" >}}
+{{< link-widget "https://hollowknight.com/" >}}
 
 {{< youtube UAO2urG23S4 >}}
 
@@ -60,8 +60,6 @@ Hollow Knightは、何も語らない謎多き主人公が、かつて栄華を�
 私がストーリーをクリアした時は、達成度が94%で、プレイ時間は22時間でした。  
 これだけプレイしてまだやりこみ要素があるので、値段とは不釣り合いなボリュームがあります。
 
-{{< steam 367520 >}}
-
 ### 総評
 
 虫をコンセプトにした面白いゲームで、死にゲーでもあります。  
@@ -69,6 +67,8 @@ Hollow Knightは、何も語らない謎多き主人公が、かつて栄華を�
 それ故に何度も挑戦することになりますが、倒せた時に得られる達成感はかなりのものです。  
 また、ボリュームややりこみ要素の多さから非常に完成度が高いゲームと言えるでしょう。  
 ですが、ボス戦が難しすぎると感じる人もいらっしゃると思うので、アクションゲームが不得意な方にはあまりお勧めできません。
+
+{{< steam 367520 >}}
 
 余談ですが、Hollow Knightは続編の制作が発表されています。  
 そこでは、本作において物語の鍵を握る存在として登場し、時に敵として戦ったキャラクターが主人公となります。  
@@ -80,7 +80,7 @@ Hollow Knightは、何も語らない謎多き主人公が、かつて栄華を�
 
 ## Hob
 
-{{< link-widget url="https://www.runicgames.com/hob/" >}}
+{{< link-widget "https://www.runicgames.com/hob/" >}}
 
 {{< youtube EljXnVDHwwI >}}
 
@@ -118,7 +118,7 @@ Hobは、片腕だけでかいグローブを装着したキャラクターが�
 
 ## Crypt of the NecroDancer
 
-{{< link-widget url="https://braceyourselfgames.com/crypt-of-the-necrodancer/" >}}
+{{< link-widget "https://braceyourselfgames.com/crypt-of-the-necrodancer/" >}}
 
 {{< youtube -HiQUw5Np8o >}}
 
@@ -161,7 +161,7 @@ steamのセール時には300円を下回ることもあるため、とりあえ
 
 ## ケイデンス・オブ・ハイラル
 
-{{< link-widget url="https://www.spike-chunsoft.co.jp/necrodancer-zelda/" >}}
+{{< link-widget "https://www.spike-chunsoft.co.jp/necrodancer-zelda/" >}}
 
 {{< youtube 5m1E-euXv-o >}}
 
@@ -196,4 +196,4 @@ steamのセール時には300円を下回ることもあるため、とりあえ
 
 余談ですが、もしプレイされる方は、ゲーム内であきビンをみかけたら絶対に入手することを推奨します。
 
-{{< link-widget url="https://ec.nintendo.com/JP/ja/titles/70010000016353" >}}
+{{< link-widget "https://ec.nintendo.com/JP/ja/titles/70010000016353" >}}
