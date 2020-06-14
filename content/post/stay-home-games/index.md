@@ -3,7 +3,7 @@ title: "おうち時間でプレイしたゲーム"
 date: 2020-06-06T17:03:51+09:00
 archives: "2020"
 categories: "Game"
-tags: ["Indie game"]
+tags: ["Indie game", "Metroidvania", "Roguelike"]
 # draft: true
 # banner: "banner.png"
 toc: true
