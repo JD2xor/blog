@@ -1,5 +1,5 @@
 table {
-  margin-bottom: 2.5rem;
+  margin: 2rem 0 2.5rem;
   
   tbody {
     border-top: 0.1rem solid $darkGray;
@@ -13,10 +13,10 @@ table {
   }
 
   th, td {
-    padding: 0.5rem 3rem;
+    padding: 0.25rem 1.25rem;
 
     @include mobile {
-      padding: 0.5rem 1rem;
+      padding: 0.25rem 1rem;
     }
   }
 }
