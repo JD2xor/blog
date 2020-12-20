@@ -32,6 +32,8 @@ toc: true
 | 全長 | 142 mm |
 | 重量 | 約 25 g |
 
+{{< amazon "B0091FXCJ6" >}}
+
 ## レグノ
 
 {{< figure src="/post/into-ballpoint-pens/legno.jpg" >}}
@@ -48,6 +50,8 @@ toc: true
 | 最大径 | 12 mm |
 | 全長 | 141 mm |
 | 重量 | 約 20.5 g |
+
+{{< amazon "B0759BWWDS" >}}
 
 ## フィラーレ ウッド
 
@@ -67,6 +71,8 @@ toc: true
 | 全長 | 140 mm |
 | 重量 | 29 g |
 
+{{< amazon "B07J1ZB3M4" >}}
+
 ## IM コアライン GT
 
 {{< figure src="/post/into-ballpoint-pens/im.jpg" >}}
@@ -85,6 +91,8 @@ toc: true
 | 全長 | 約 135 mm |
 | 重量 | 約 23.3 g |
 
+{{< amazon "B01LZSA7V1" >}}
+
 ## ジョッター XL モノクローム
 
 {{< figure src="/post/into-ballpoint-pens/jotter-xl-monochrome.jpg" >}}
@@ -102,6 +110,8 @@ toc: true
 | 最大径 | 約 10.5 mm |
 | 全長 | 約 139 mm |
 | 重量 | 約 20 g |
+
+{{< amazon "B086Z836L5" >}}
 
 ## まとめ
 
