@@ -1,0 +1,17 @@
+{{ $num := .Get 0 }}
+{{ $url := printf "https://www.amazon.co.jp/dp/%s" $num }}
+{{ $json := getJSON "https://secret-sea-89806.herokuapp.com/ogp?url=" $url }}
+{{ $title := $json.Title }}
+{{ $host := $json.URL.Host }}
+{{ $image := printf "https://images-na.ssl-images-amazon.com/images/P/%s.jpg" $num }}
+
+<div class="link-widget">
+  <a href="{{ $url }}" target="_blank" rel="noopener noreferrer">
+    <div class="link-widget-content">
+      <strong class="link-widget-title">{{ $title }}</strong>
+      <div class="link-widget-description"></div>
+      <div class="link-widget-host">{{ $host }}</div>
+    </div>
+    <div class="link-widget-thumbnail" style="background-image: url({{$image}});"></div>
+  </a>
+</div>
